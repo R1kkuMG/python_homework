@@ -1,9 +1,7 @@
 # 3. Вывести на экран числа от -N до N
 
-print ('Введите любое целое число:')
-a = int(input())
-
-res = -a
-while res <= a:
+num = int(input('Введите любое целое положительное число: '))
+res = -num
+while res <= num:
     print (res)
     res += 1
