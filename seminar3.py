@@ -57,6 +57,8 @@
 # for i in range(len(list)): # чтобы i принимала значение индексов
 #     if list[i] == st:
 #         count += 1
-#     if count == 2:
-#         print(i)
-#         break
+#         if count == 2:
+#             print(i)
+#             break
+# if count < 2:
+#     print(-1)
