@@ -109,8 +109,9 @@
 
 # ФУНКЦИИ
 
+# модули
 # import hello as h
-# print (h.f(1))
+# print (h.f(1)) # f1 - название функции из файла, в скобках - аргумент)
 
 
 # def new_string(symbol, count = 3): # можно заранее задачть значение аргументов
@@ -291,16 +292,16 @@
 #     print(e)
 
 
-list1 = [1,2,3,4,5]
-# print(list1.pop()) # удаление последнего элемента из списка
-# print(len(list1))
-# print(list1)
+# list1 = [1,2,3,4,5]
+# # print(list1.pop()) # удаление последнего элемента из списка
+# # print(len(list1))
+# # print(list1)
 
-# print(list1.pop(2)) # удаление 2ого элемента из списка
-# print(list1)
+# # print(list1.pop(2)) # удаление 2ого элемента из списка
+# # print(list1)
 
-# print(list1.insert(2, 11)) # добавление 2ого элемента (сначала позиция, потом значение)
-# print(list1)
+# # print(list1.insert(2, 11)) # добавление 2ого элемента (сначала позиция, потом значение)
+# # print(list1)
 
-print(list1.append(11)) # добавление элемента в конец списка
-print(list1)
+# print(list1.append(11)) # добавление элемента в конец списка
+# print(list1)
