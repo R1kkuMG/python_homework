@@ -21,7 +21,7 @@
 # list = ['1', '2', '3', 'hello world']
 # print (list)
 
-# ВВОДВЫВОД ДАННЫХ
+# ВВОД ВЫВОД ДАННЫХ
 # print ('Введите a')
 # a = int(input())
 # print ('Введите b')
@@ -40,6 +40,15 @@
 # a += 5
 # print (a)
 
+# iter = 2
+# iter += 3 # iter = iter + 3
+# iter -= 4 # iter = iter - 4
+# iter *= 5 # iter = iter * 5
+# iter /= 5 # iter = iter / 5
+# iter //= 5 # iter = iter // 5
+# iter %= 5 # iter = iter % 5
+# iter **= 5 # iter = iter ** 5
+
 # ЛОГИЧЕСКИЕ ОПЕРАЦИИ
 # a = 1 != 2
 # a = 'qwe'
@@ -49,18 +58,25 @@
 # func = 1
 # T = 4
 # x = 123
-
 # f = 2 < 3 or 4 > 6
-
 # f = [1, 2, 3, 4]
 # # print (not 2 in f)
+
+# username = input('Введите имя: ')
+# if username == 'Маша':
+#     print('Ура, это же МАША!')
+# elif username == 'Марина':
+#     print('Я так ждала Вас, Марина!')
+# elif username == 'Ильнар':
+#     print('Ильнар - топ)')
+# else:
+#     print('Привет, ', username)
 
 # is_odd = f[0] % 2 == 0
 # print (is_odd)
 
 # orig = 23
 # inv = 0
-
 # while orig != 0:
 #     inv = inv * 10 + (orig % 10)
 #     orig //= 10
@@ -69,10 +85,18 @@
 #     print ('хватит ) ')
 # print (inv)
 
+# RANGE
 # r = range(10)
 # # for i in range(1,10,2):
 # for i in 'qwerty':
 #     print (i)
+
+# r = range(5) # range(0, 5)
+# r = range(2, 5) # range(2, 5)
+# r = range(-5, 0) # range(-5, 0)
+# r = range(1, 10, 2) # range(1, 10, 2)
+# r = range(100, 0, -20) # range(100, 0, -20)
+
 
 # ФУНКЦИИ
 # def f(x):
@@ -269,6 +293,29 @@
 
 # СПИСКИ
 
+# numbers = [1, 2, 3, 4, 5]
+# print(numbers) # [1, 2, 3, 4, 5]
+# numbers = list(range(1, 6))
+# print(numbers) # [1, 2, 3, 4, 5]
+# numbers[0] = 10
+# print(numbers) # [10, 2, 3, 4, 5]
+# for i in numbers:
+#     i *= 2
+#     print(i) # [20, 4, 6, 8, 10]
+# print(numbers) # [10, 2, 3, 4, 5]
+
+# colors = ['red', 'green', 'blue']
+
+# for e in colors:
+#     print(e) # red green blue
+
+# for e in colors:
+#     print(e*2) # redred greengreen blueblue
+
+# colors.append('gray') # добавить в конец
+# print(colors == ['red', 'green', 'blue', 'gray']) # True
+# colors.remove('red') #del colors[0] # удалить элемент
+
 # list1 = [1,2,3,4,5]
 # list2 = list1
 
@@ -305,3 +352,28 @@
 
 # print(list1.append(11)) # добавление элемента в конец списка
 # print(list1)
+
+
+# СТРОКИ
+
+# print(len(text)) # 39
+# print('ещё' in text) # True
+# print(text.isdigit()) # False
+# print(text.islower()) # True
+# print(text.replace('ещё','ЕЩЁ')) #
+# for c in text:
+#     print(c)
+
+# text = 'съешь ещё этих мягких французских булок'
+# print(text[0]) # c
+# print(text[1]) # ъ
+# print(text[len(text)-1]) # к
+# print(text[-5]) # б
+# print(text[:]) # print(text)
+# print(text[:2]) # съ
+# print(text[len(text)-2:]) # ок
+# print(text[2:9]) # ешь ещё
+# print(text[6:-18]) # ещё этих мягких
+# print(text[0:len(text):6]) # сеикакл
+# print(text[::6]) # сеикакл
+# text = text[2:9] + text[-5] + text[:2] # ..
