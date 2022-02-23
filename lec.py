@@ -377,3 +377,109 @@
 # print(text[0:len(text):6]) # сеикакл
 # print(text[::6]) # сеикакл
 # text = text[2:9] + text[-5] + text[:2] # ..
+
+
+
+# ФУНКЦИИ
+
+# 1
+# def f(x):
+#     return x ** 2
+
+# g = f
+
+# print(type(f))
+# print(type(g))
+
+# print(f(4))
+# print(g(4))
+
+# 2
+# def calc1(x):
+#     return x + 10
+# # print(calc1(10))
+
+# def calc2(x):
+#     return x * 10
+# # print(calc2(10))
+
+# def math(op, x): # op - функция
+#     print(op(x))
+
+# math(calc2, 10)
+# math(calc1, 10)
+
+# 3
+# def sum(x, y):
+#     return x + y
+
+# sum = lambda x, y: x + y + 1  # то же самое, что и функция выше; используется такой прием очень часто
+
+# def mylt(x, y):
+#     return x * y
+
+# def calc(op, a, b): # в качестве аргумента может быть целая функция (op)
+#     print(op(a, b))
+#     # return op(a,b)
+
+# calc(lambda x, y: x + y + 1, 4, 5)
+
+
+# LIST COMPREHENSION
+
+# list = []
+# for i in range(1, 101):
+#     if (i % 2 == 0):
+#         list.append(i)
+# print(list)
+
+# def f(x):
+#     return x ** 3
+
+# list = [(i, f(i)) for i in range(1, 21) if i % 2 == 0]  # упрощенный код выше 
+# print(list)
+
+# def f(x):
+#     return x ** 2
+
+# list = [(i, f(i)) for i in (1, 2, 3, 5, 8, 15, 23, 38) if i % 2 == 0]
+# print(list)
+
+# В файле хранятся числа, нужно выбрать четные и
+# составить список пар (число; квадрат числа).
+# Пример:
+# 1 2 3 5 8 15 23 38
+# Получить:
+# [(2, 4), (8, 64), (38, 1444)]
+
+
+# data = '1 2 3 5 8 15 23 38'.split()
+# data = map(int, data)
+# data = filter(lambda e: not e % 2, data) # функция фильтр для сортировки
+# data = list(map(lambda e: (e, e**2), data))
+# print(data)
+
+# ФУНКЦИЯ MAP
+
+# li = [x for x in range(1, 20)]
+# li = list(map(lambda x:x + 10,li))
+# print(li)
+
+# data = list(map(int, input().split()))
+# print(data)
+
+# ФУНКЦИЯ ZIP (из 2 списков делает кортежи)
+
+# users = ['user1', 'user2', 'user3', 'user4', 'user5']
+# ids = [1, 2, 3, 4, 5]
+
+# data = list(zip(users, ids))
+# print(data)
+
+# ФУНКЦИЯ ENUMERATE
+
+users = ['user1', 'user2', 'user3', 'user4', 'user5']
+ids = [1, 2, 3, 4, 5]
+
+data = list(enumerate(users))
+print(data)
