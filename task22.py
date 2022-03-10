@@ -11,7 +11,10 @@
 
 
 #второе решение
-mylist = list(range(5))
-print(mylist)
+# mylist = list(range(5))
+# print(mylist)
 
-print(sum(mylist[1::2]))
+# print(sum(mylist[1::2]))
+
+n = int(input('n = '))
+print(sum(list(filter(lambda x: x%2, [x for x in range(1, n + 1)]))))
